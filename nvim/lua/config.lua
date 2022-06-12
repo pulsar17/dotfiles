@@ -52,3 +52,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
+
+--Set colorscheme
+vim.opt.termguicolors = true
+vim.cmd [[colorscheme onedark]]
+
+-- Set completeopt to have a better completion experience
+vim.opt.completeopt = 'menuone,noselect'
