@@ -34,6 +34,7 @@ vim.opt.listchars = {nbsp = "⍽", tab = ":⇥", trail = "-" , eol = "↵"}
 
 vim.opt.undofile = true
 
+vim.opt.cursorline = true
 
 -- Copyright (c) 2021 Michael Lingelbach
 -- MIT License
