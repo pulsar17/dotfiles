@@ -33,6 +33,7 @@ require('packer').startup(function(use)
     use 'hrsh7th/cmp-buffer'
     use 'saadparwaiz1/cmp_luasnip'
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
+    use 'scrooloose/nerdtree' -- fs plugin
 end)
 
 -- Treesitter configuration
@@ -145,7 +146,6 @@ local on_attach = function(_, bufnr)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
-  vim.keymap.set('n', '<leader>so', require('telescope.builtin').lsp_document_symbols, opts)
   vim.api.nvim_buf_create_user_command(bufnr, "Format", vim.lsp.buf.formatting, {})
 end
 
@@ -216,3 +216,8 @@ cmp.setup {
     { name = 'buffer' },
   },
 }
+
+-- nerdtree
+
+vim.keymap.set({'n', 'v'}, '<Leader>n', ':NERDTreeToggle<CR>', {silent = true})
+
