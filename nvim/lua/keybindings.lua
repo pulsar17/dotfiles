@@ -44,6 +44,12 @@ vim.keymap.set('i', '<C-J>', '<Esc><C-W>j')
 vim.keymap.set('i', '<C-K>', '<Esc><C-W>k')
 vim.keymap.set('i', '<C-L>', '<Esc><C-W>l')
 
+-- Buffer movements for terminal mode
+vim.keymap.set('t', "<C-H>", "<C-\\><C-N><C-H>", {remap=true})
+vim.keymap.set('t', "<C-J>", "<C-\\><C-N><C-J>", {remap=true})
+vim.keymap.set('t', "<C-K>", "<C-\\><C-N><C-K>", {remap=true})
+vim.keymap.set('t', "<C-L>", "<C-\\><C-N><C-L>", {remap=true})
+
 -- Annoying basic defaults
 vim.api.nvim_create_user_command('Q', 'q', {})
 vim.api.nvim_create_user_command('W', 'w', {})

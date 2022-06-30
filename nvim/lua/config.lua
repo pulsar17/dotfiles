@@ -54,6 +54,19 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+-- Make terminal act somewhat like a terminal
+local terminal_group = vim.api.nvim_create_augroup('CleanTerm', { clear = true })
+vim.api.nvim_create_autocmd('TermOpen', {
+  callback = function()
+    vim.wo.number = false
+    vim.wo.relativenumber = false
+    vim.opt.signcolumn = 'no'
+    vim.keymap.set('t', '<Esc>', '<C-\\><C-N>')
+  end,
+  group = terminal_group,
+  pattern = '*',
+})
+
 --Set colorscheme
 vim.opt.termguicolors = true
 vim.cmd [[colorscheme onedark]]
