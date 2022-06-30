@@ -36,6 +36,8 @@ require('packer').startup(function(use)
     use 'scrooloose/nerdtree' -- fs plugin
     use 'ryanoasis/vim-devicons' -- pretty file icons
     use 'tiagofumo/vim-nerdtree-syntax-highlight' -- colorized file names and icons
+    use 'mfussenegger/nvim-dap'
+    use 'mfussenegger/nvim-dap-python'
 end)
 
 -- Treesitter configuration
