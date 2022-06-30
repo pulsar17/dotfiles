@@ -40,7 +40,7 @@ vim.keymap.set({'n', 'v'}, '<C-J>', '<C-W>j')
 vim.keymap.set({'n', 'v'}, '<C-K>', '<C-W>k')
 vim.keymap.set({'n', 'v'}, '<C-L>', '<C-W>l')
 vim.keymap.set('i', '<C-H>', '<Esc><C-W>h')
-vim.keymap.set('i', '<C-j>', '<Esc><C-W>j')
+vim.keymap.set('i', '<C-J>', '<Esc><C-W>j')
 vim.keymap.set('i', '<C-K>', '<Esc><C-W>k')
 vim.keymap.set('i', '<C-L>', '<Esc><C-W>l')
 
