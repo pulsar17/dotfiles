@@ -34,6 +34,8 @@ require('packer').startup(function(use)
     use 'saadparwaiz1/cmp_luasnip'
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
     use 'scrooloose/nerdtree' -- fs plugin
+    use 'ryanoasis/vim-devicons' -- pretty file icons
+    use 'tiagofumo/vim-nerdtree-syntax-highlight' -- colorized file names and icons
 end)
 
 -- Treesitter configuration
