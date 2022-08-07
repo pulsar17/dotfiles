@@ -48,7 +48,8 @@ vim.keymap.set('i', '<C-L>', '<Esc><C-W>l')
 vim.keymap.set('t', "<C-H>", "<C-\\><C-N><C-H>", {remap=true})
 vim.keymap.set('t', "<C-J>", "<C-\\><C-N><C-J>", {remap=true})
 vim.keymap.set('t', "<C-K>", "<C-\\><C-N><C-K>", {remap=true})
-vim.keymap.set('t', "<C-L>", "<C-\\><C-N><C-L>", {remap=true})
+-- Intentional comment, interferes with Ctrl-L for clearing the terminal
+-- vim.keymap.set('t', "<C-L>", "<C-\\><C-N><C-L>", {remap=true})
 
 -- Annoying basic defaults
 vim.api.nvim_create_user_command('Q', 'q', {})
