@@ -17,14 +17,14 @@ cd dotfiles/ # important
 Then for each application that you want to have configured like mine, stow its directory
 
 ```bash
-stow nvim
-stow sqlite
+stow --target="$HOME" nvim
+stow --target="$HOME" sqlite
 ```
 
 Or if you want to copy all my configs and are feeling lazy like me, use:
 
 ```bash
-find . -maxdepth 1 -type d -name '[!.]*' -exec stow '{}' \;
+find . -maxdepth 1 -type d -name '[!.]*' -exec stow --target="$HOME" '{}' \;
 ```
 
 This will run `stow` for every directory under `dotfiles/`.
