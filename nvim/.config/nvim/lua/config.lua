@@ -17,7 +17,6 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.smartcase = true
-vim.opt.smartcase = true
 
 vim.opt.expandtab = true
 vim.opt.tabstop = 8
