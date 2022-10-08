@@ -19,9 +19,10 @@ vim.opt.relativenumber = true
 vim.opt.smartcase = true
 
 vim.opt.expandtab = true
-vim.opt.tabstop = 8
-vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+
 
 -- Annoying default split directions
 vim.opt.splitright = true
