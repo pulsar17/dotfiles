@@ -18,6 +18,26 @@ vim.opt.relativenumber = true
 
 vim.opt.smartcase = true
 
+-- Nice to remember what these mean
+--
+-- expandtab    -  I don't want to enter <Tab>s at all
+--              -  relevant for new files/characters
+--                  (nvi)
+--                  ~ map <Tab> <Space>
+--                  in >>
+--                  in :norm 0i<Tab>
+--
+-- shiftwidth   - Spaces to shift by while indenting
+--                  (nv)
+--                  in >>
+--
+-- tabstop      - How wide existing tabs look
+--                  (nvi)
+--
+-- softtabstop  - A <Tab> in insert mode = softtabstop spaces
+--                  Except, damn it smarttab
+--                  (i)
+
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
