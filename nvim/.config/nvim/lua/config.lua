@@ -50,7 +50,8 @@ vim.opt.splitbelow = true
 
 -- Some nice characters
 vim.opt.list = false
-vim.opt.listchars = {nbsp = "⍽", tab = ":⇥", trail = "-" , eol = "↵"}
+vim.opt.showbreak = "↪"
+vim.opt.listchars = {nbsp = "⍽", tab = "⇥ ", trail = "•" , eol = "↵"}
 
 vim.opt.undofile = true
 
