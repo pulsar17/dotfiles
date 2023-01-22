@@ -24,9 +24,11 @@ stow --target="$HOME" sqlite
 Or if you want to copy all my configs and are feeling lazy like me, use:
 
 ```bash
-find . -maxdepth 1 -type d -name '[!.]*' -exec stow --target="$HOME" '{}' \;
+for dir in $(find . -maxdepth 1 -type d -name '[!.]*' -print); do stow --target="$HOME" $(basename $dir); done
 ```
 
 This will run `stow` for every directory under `dotfiles/`.
+
+This will also conveniently ignore stowing hidden directories like `.git`
 
 Enjoy 🎉🍒
