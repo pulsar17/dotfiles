@@ -45,9 +45,9 @@ vim.keymap.set('i', '<C-K>', '<Esc><C-W>k')
 vim.keymap.set('i', '<C-L>', '<Esc><C-W>l')
 
 -- Buffer movements for terminal mode
-vim.keymap.set('t', "<C-H>", "<C-\\><C-N><C-H>", {remap=true})
-vim.keymap.set('t', "<C-J>", "<C-\\><C-N><C-J>", {remap=true})
-vim.keymap.set('t', "<C-K>", "<C-\\><C-N><C-K>", {remap=true})
+vim.keymap.set('t', "<C-H>", "<C-\\><C-N><C-H>", {noremap=true})
+vim.keymap.set('t', "<C-J>", "<C-\\><C-N><C-J>", {noremap=true})
+vim.keymap.set('t', "<C-K>", "<C-\\><C-N><C-K>", {noremap=true})
 -- Intentional comment, interferes with Ctrl-L for clearing the terminal
 -- vim.keymap.set('t', "<C-L>", "<C-\\><C-N><C-L>", {remap=true})
 
